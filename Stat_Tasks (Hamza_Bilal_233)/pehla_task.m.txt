@@ -1,0 +1,10 @@
+% Task (i) Import Dataset (students' scores)
+Name = {'Ali';'Sara';'Bilal';'Ayesha'};
+Math = [78; 88; 67; 95];
+Science = [85; 92; 75; 89];
+English = [90; 81; 70; 94];
+
+students = table(Name, Math, Science, English);
+
+disp('Imported Dataset:');
+disp(students);

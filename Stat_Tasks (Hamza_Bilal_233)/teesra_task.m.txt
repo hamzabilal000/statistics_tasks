@@ -1,0 +1,7 @@
+% Task (iii) Plot Histogram
+scores = [45, 60, 72, 88, 90, 56, 77, 82, 66, 95, 100, 53];
+
+histogram(scores, 8);
+xlabel('Scores');
+ylabel('Frequency');
+title('Histogram of Exam Scores');

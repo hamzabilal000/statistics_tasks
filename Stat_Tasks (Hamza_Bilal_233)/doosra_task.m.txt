@@ -1,0 +1,8 @@
+% Task (ii) Mean & Variance
+heights = [160, 165, 170, 155, 180, 175, 168]; % cm
+
+mean_height = mean(heights);
+var_height = var(heights);
+
+disp(['Mean Height = ', num2str(mean_height)]);
+disp(['Variance of Height = ', num2str(var_height)]);

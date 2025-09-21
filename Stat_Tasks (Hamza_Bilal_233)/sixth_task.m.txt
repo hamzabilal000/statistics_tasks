@@ -1,0 +1,14 @@
+% Task (vi) Functions for Permutations and Combinations
+
+% Permutation
+permutation = @(n,r) factorial(n)/factorial(n-r);
+
+% Combination
+combination = @(n,r) factorial(n)/(factorial(r)*factorial(n-r));
+
+% Example
+p = permutation(5,3);
+c = combination(5,3);
+
+disp(['P(5,3) = ', num2str(p)]);
+disp(['C(5,3) = ', num2str(c)]);

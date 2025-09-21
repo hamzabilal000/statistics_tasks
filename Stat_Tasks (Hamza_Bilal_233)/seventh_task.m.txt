@@ -1,0 +1,4 @@
+% Task (vii) Lottery Simulation
+lottery_numbers = randperm(49,6);
+disp('Your Lottery Numbers:');
+disp(lottery_numbers);

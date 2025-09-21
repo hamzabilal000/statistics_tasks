@@ -1,0 +1,11 @@
+% Task (iv) Dice and Coin Toss
+
+% Simulate 10 coin tosses (0=Tails, 1=Heads)
+coinToss = randi([0 1], 1, 10);
+disp('Coin Toss Results (0=Tails,1=Heads):');
+disp(coinToss);
+
+% Simulate 10 dice rolls (1 to 6)
+diceRoll = randi([1 6], 1, 10);
+disp('Dice Roll Results:');
+disp(diceRoll);

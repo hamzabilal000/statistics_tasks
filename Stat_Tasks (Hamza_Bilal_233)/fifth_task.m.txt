@@ -1,0 +1,20 @@
+% Task (v) Spam Classification with Bayes Rule
+
+emails = {'free','win','money','offer','hello','meeting','project','lottery','cash','discount'};
+labels = {'spam','spam','spam','spam','ham','ham','ham','spam','spam','ham'};
+
+spamCount = sum(strcmp(labels,'spam'));
+hamCount  = sum(strcmp(labels,'ham'));
+
+P_spam = spamCount / length(labels);
+P_ham  = hamCount / length(labels);
+
+% Example: classify word = "free"
+word = 'free';
+P_word_given_spam = sum(strcmp(emails,word) & strcmp(labels,'spam')) / spamCount;
+P_word_given_ham  = sum(strcmp(emails,word) & strcmp(labels,'ham')) / hamCount;
+
+P_spam_given_word = (P_word_given_spam*P_spam) / ...
+                   (P_word_given_spam*P_spam + P_word_given_ham*P_ham);
+
+disp(['P(Spam | "',word,'") = ', num2str(P_spam_given_word)]);
